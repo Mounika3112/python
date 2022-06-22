@@ -1,0 +1,34 @@
+fee_A=50000
+fee_E=100000
+l=[]
+n=int(input("enter no.of students : "))
+for i in range(n):
+    f1=f2=f3=f4=0
+    c=int(input("enter 0:arts-student and 1:engineer-student : "))
+    m=int(input("enter student marks : "))
+    if(c==0):
+        if(m>=90):
+            s=fee_A*0.5
+            f1=fee_A-s
+            l.append(f1)
+        else:
+            if(m%2!=0):
+                s=fee_A*0.05
+                f2=fee_A-s
+                l.append(f2)
+            else:
+                l.append(fee_A)
+    else:
+        if(m>=90):
+            s=fee_E*0.5
+            f3=fee_E-s
+            l.append(f3)
+        else:
+            if(m%2!=0):
+                s=fee_E*0.05
+                f4=fee_E-s
+                l.append(f4)
+            else:
+                l.append(fee_E)
+print(l)
+
