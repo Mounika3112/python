@@ -1,0 +1,12 @@
+n1=int(input())
+n2=int(input())
+n3=int(input())
+if(n1!=7 and n2!=7 and n3!=7):
+    print(n1*n2*n3)
+else:
+    if(n1==7):
+        print(n2*n3)
+    if(n2==7):
+        print(n3)
+    if(n3==7):
+        print(-1)
