@@ -1,0 +1,17 @@
+a=37550
+c=37550/3
+n1=int(input("enter no.of adults : "))
+n2=int(input("enter no.of children : "))
+m1=0
+m2=0
+for i in range(n1):
+    a1=0
+    a1=a+((0.07)*a)
+    m1=m1+(a1-(0.1*a))
+for i in range(n2):
+    a2=0
+    a2=c+((0.07)*c)
+    m2=m2+(c-(0.1*c))
+m=m1+m2
+print("total amount : ",m)
+    
